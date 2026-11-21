@@ -23,7 +23,7 @@ The Cozy Nook is a front-end furniture store website with a warm earth-tone look
 
 ## Project links
 - GitHub repository: https://github.com/daniserquena/the-cozy-nook
-- GitHub Pages website: .
+- GitHub Pages website: https://daniserquena.github.io/the-cozy-nook/
 
 ## Credits
 - Product and interior images: https://pin.it/1KHLX8uJn
