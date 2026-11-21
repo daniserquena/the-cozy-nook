@@ -22,10 +22,12 @@ The Cozy Nook is a front-end furniture store website with a warm earth-tone look
 - Danielle Serqueña — Designed and developed the website.
 
 ## Project links
-- GitHub repository: Add the public repository URL here.
-- GitHub Pages website: Add the published website URL here.
+- GitHub repository: https://github.com/daniserquena/the-cozy-nook
+- GitHub Pages website: .
 
 ## Credits
 - Product and interior images: https://pin.it/1KHLX8uJn
 - Fonts: DM Sans and Playfair Display — Google Fonts
 - CSS framework: Bootstrap 5 — https://getbootstrap.com/
+
+  The Cozy Nook website is being republished.
