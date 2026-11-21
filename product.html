@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Cozy Nook — cozy, timeless furniture for Filipino homes.">
+  <title>Products | The Cozy Nook</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style-p.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="site-container site-nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">THE COZY NOOK</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    <button class="cart-display" id="cart-button" type="button" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+      <span>Cart</span><span class="cart-count" aria-live="polite">0</span>
+     </button>
+    </div>
+    </nav>
+  </header>
+  <main>
+    <section class="products-intro">
+      <div class="site-container">
+        <p class="eyebrow">Find the right piece for your home</p>
+        <h1>Our Products</h1>
+        <p>Browse our furniture by category and discover your next favorite.</p>
+      </div>
+    </section>
+    <section class="filter-area site-container" aria-label="Filter products by category">
+      <p class="filter-label">Choose a category:</p>
+      <div class="filter-buttons">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="couch" aria-pressed="false">Couch</button>
+        <button class="filter-button" type="button" data-filter="table" aria-pressed="false">Table</button>
+        <button class="filter-button" type="button" data-filter="lamp" aria-pressed="false">Lamp</button>
+        <button class="filter-button" type="button" data-filter="storage" aria-pressed="false">Storage</button>
+        <button class="filter-button" type="button" data-filter="sofa" aria-pressed="false">Sofa</button>
+      </div>
+    </section>
+    <div class="catalog">
+      <section class="product-category site-container" id="couch" data-category-section="couch">
+        <div class="category-heading">
+          <p class="eyebrow">The Cozy Nook collection</p>
+          <h2>Couch</h2>
+        </div>
+        <div class="row g-4">
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="couch">
+            <div class="product-card">
+              <div class="product-image"><img src="images/couch1.png" alt="Chair"></div>
+              <h3>The Patchwork Chair</h3>
+              <p class="product-description">Colorful cushions add a playful touch.</p>
+              <p class="price">₱60,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="couch">
+            <div class="product-card">
+              <div class="product-image"><img src="images/couch2.png" alt="Chair"></div>
+              <h3>The Olivewood Chair</h3>
+              <p class="product-description">A relaxed chair with refined details.</p>
+              <p class="price">₱80,500.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="couch">
+            <div class="product-card">
+              <div class="product-image"><img src="images/couch3.png" alt="Chair"></div>
+              <h3>The Cacao Curve Sofa</h3>
+              <p class="product-description">Soft curves create a cozy look.</p>
+              <p class="price">₱95,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="couch">
+            <div class="product-card">
+              <div class="product-image"><img src="images/couch4.png" alt="Chair"></div>
+              <h3>The Mocha Cloud Chair</h3>
+              <p class="product-description">Plush comfort with a rounded shape.</p>
+              <p class="price">₱70,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="product-category site-container" id="table" data-category-section="table">
+        <div class="category-heading">
+          <p class="eyebrow">The Cozy Nook collection</p>
+          <h2>Table</h2>
+        </div>
+        <div class="row g-4">
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="table">
+            <div class="product-card">
+              <div class="product-image"><img src="images/table.png" alt="Chair"></div>
+              <h3>Luma Nesting Tables</h3>
+              <p class="product-description">Versatile tables with a graceful shape.</p>
+              <p class="price">₱20,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="table">
+            <div class="product-card">
+              <div class="product-image"><img src="images/table1.png" alt="Chair"></div>
+              <h3>Solenne Pedestal Table</h3>
+              <p class="product-description">A sculptural accent for any room.</p>
+              <p class="price">₱19,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="table">
+            <div class="product-card">
+              <div class="product-image"><img src="images/table2.png" alt="Chair"></div>
+              <h3>Cove Coffee Table</h3>
+              <p class="product-description">Stylish design with extra storage.</p>
+              <p class="price">₱22,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="table">
+            <div class="product-card">
+              <div class="product-image"><img src="images/table3.png" alt="Chair"></div>
+              <h3>Forma Accent Table</h3>
+              <p class="product-description">A modern piece with an artistic base.</p>
+              <p class="price">₱50,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="product-category site-container" id="lamp" data-category-section="lamp">
+        <div class="category-heading">
+          <p class="eyebrow">The Cozy Nook collection</p>
+          <h2>Lamp</h2>
+        </div>
+        <div class="row g-4">
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="lamp">
+            <div class="product-card">
+              <div class="product-image"><img src="images/lamp1.png" alt="Chair"></div>
+              <h3>Elowen Table Lamp</h3>
+              <p class="product-description">A soft glow for quiet evenings.</p>
+              <p class="price">₱11,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="lamp">
+            <div class="product-card">
+              <div class="product-image"><img src="images/lamp2.png" alt="Chair"></div>
+              <h3>Maison Table Lamp</h3>
+              <p class="product-description">A polished accent for your home.</p>
+              <p class="price">₱13,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="lamp">
+            <div class="product-card">
+              <div class="product-image"><img src="images/lamp3.png" alt="Chair"></div>
+              <h3>Liora Table Lamp</h3>
+              <p class="product-description">A playful shape with a gentle glow.</p>
+              <p class="price">₱15,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="lamp">
+            <div class="product-card">
+              <div class="product-image"><img src="images/lamp4.png" alt="Chair"></div>
+              <h3>Aurelle Floor Lamp</h3>
+              <p class="product-description">A slim lamp for cozy corners.</p>
+              <p class="price">₱12,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="product-category site-container" id="storage" data-category-section="storage">
+        <div class="category-heading">
+          <p class="eyebrow">The Cozy Nook collection</p>
+          <h2>Storage</h2>
+        </div>
+        <div class="row g-4">
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="storage">
+            <div class="product-card">
+              <div class="product-image"><img src="images/storage1.png" alt="Chair"></div>
+              <h3>Curva Drawer Chest</h3>
+              <p class="product-description">Elegant storage with a curved front.</p>
+              <p class="price">₱25,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="storage">
+            <div class="product-card">
+              <div class="product-image"><img src="images/storage2.png" alt="Chair"></div>
+              <h3>Atelier Sideboard</h3>
+              <p class="product-description">A stylish home for everyday essentials.</p>
+              <p class="price">₱68,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="storage">
+            <div class="product-card">
+              <div class="product-image"><img src="images/storage3.png" alt="Chair"></div>
+              <h3>Sorelle Low Cabinet</h3>
+              <p class="product-description">A modern cabinet with rounded details.</p>
+              <p class="price">₱57,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="storage">
+            <div class="product-card">
+              <div class="product-image"><img src="images/storage4.png" alt="Chair"></div>
+              <h3>Astor Media Console</h3>
+              <p class="product-description">A sleek finish for your living room</p>
+              <p class="price">₱55,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="product-category site-container" id="sofa" data-category-section="sofa">
+        <div class="category-heading">
+          <p class="eyebrow">The Cozy Nook collection</p>
+          <h2>Sofa</h2>
+        </div>
+        <div class="row g-4">
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="sofa">
+            <div class="product-card">
+              <div class="product-image"><img src="images/sofa1.png" alt="Chair"></div>
+              <h3>Cloudline Modular Sofa</h3>
+              <p class="product-description">A soft centerpiece for relaxing.</p>
+              <p class="price">₱80,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="sofa">
+            <div class="product-card">
+              <div class="product-image"><img src="images/sofa2.png" alt="Chair"></div>
+              <h3>Solace Two-Seat Sofa</h3>
+              <p class="product-description">Comfort with a clean, modern look.</p>
+              <p class="price">₱50,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="sofa">
+            <div class="product-card">
+              <div class="product-image"><img src="images/sofa3.png" alt="Chair"></div>
+              <h3>Siena Curve Sectional</h3>
+              <p class="product-description">Room to gather and unwind.</p>
+              <p class="price">₱100,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-3 product-item" data-category="sofa">
+            <div class="product-card">
+              <div class="product-image"><img src="images/sofa4.png" alt="Chair"></div>
+              <h3>Marlowe Sofa</h3>
+              <p class="product-description">Classic comfort with a refined finish.</p>
+              <p class="price">₱90,000.00</p>
+              <div class="product-actions"><button class="outline-button add-button" type="button">Add to
+                  Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="site-container footer-content">
+      <div>
+        <h2>THE COZY NOOK</h2>
+        <p>Furniture made for slower, cozier days.</p>
+      </div>
+      <div class="footer-socials">
+        <p>Follow our cozy corner</p>
+        <a href="contact.html" aria-label="Instagram, go to Contact Us"><svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="18" cy="6" r="1"></circle>
+          </svg></a>
+        <a href="contact.html" aria-label="Facebook, go to Contact Us"><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.4C17.2 1.2 16.2 1 15 1c-3.2 0-5 1.9-5 5.4V9H7v4h3v8z">
+            </path>
+          </svg></a>
+        <a href="contact.html" aria-label="TikTok, go to Contact Us"><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 3v11.2a4.2 4.2 0 1 1-3-4V7.1c1.1 2 3.2 3.2 6 3.3V7.2c-1.8-.1-3-1.3-3-4.2z"></path>
+          </svg></a>
+        <a class="footer-contact-link" href="contact.html">Contact us</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 The Cozy Nook Furniture</p>
+  </footer>
+  <div class="cart-modal" id="cart-modal" hidden>
+  <div class="cart-box" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <button class="close-cart" id="close-cart" type="button" aria-label="Close">x</button>
+    <h2 id="cart-title">Your Cart</h2>
+    <p id="cart-message"></p>
+    <div class="cart-actions" id="cart-actions">
+      <button class="dark-button" id="checkout-button" type="button">Check Out</button>
+      <button class="outline-button" id="cancel-order-button" type="button">Cancel Order
+      </button>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

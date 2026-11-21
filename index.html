@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Cozy Nook — cozy, timeless furniture for Filipino homes.">
+  <title>Home | The Cozy Nook</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="site-container site-nav" aria-label="Main navigation">
+    <a class="logo" href="index.html">THE COZY NOOK</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <button class="cart-display" id="cart-button" type="button" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+      <span>Cart</span> <span class="cart-count">0</span>
+     </button>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="home">
+    <img class="hero-image" src="images/opt3.jpg" alt="A warm, comfortable living room">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="eyebrow">A softer place to land</p>
+      <h1>Welcome<br>Home</h1>
+      <a class="light-button" href="#our-products">Explore the store</a>
+    </div>
+  </section>
+
+  <section class="section site-container" id="our-products">
+    <p class="eyebrow text-center">Find your favorite</p>
+    <h2 class="section-title">Our Products</h2>
+    <div class="row g-4 category-grid">
+      <div class="col-12 col-sm-6 col-lg-3"><a class="category-card" href="product.html#couch"><img src="images/couch.png" alt="Cozy couch"><span>COUCH</span></a></div>
+      <div class="col-12 col-sm-6 col-lg-3"><a class="category-card" href="product.html#table"><img src="images/table.png" alt="Wooden table"><span>TABLE</span></a></div>
+      <div class="col-12 col-sm-6 col-lg-3"><a class="category-card" href="product.html#lamp"><img src="images/lamp.png" alt="Table lamp"><span>LAMP</span></a></div>
+      <div class="col-12 col-sm-6 col-lg-3"><a class="category-card" href="product.html#storage"><img src="images/storage.png" alt="Storage furniture"><span>STORAGE</span></a></div>
+    </div>
+  </section>
+
+  <section class="collection-banner">
+    <img src="images/cc3.jpg" alt="Comfortable couch in a cozy living room">
+    <div class="collection-shade"></div>
+    <div class="collection-content site-container">
+      <p class="eyebrow">Made for gathering</p>
+      <h2>Couch Collection</h2>
+      <p>Comfortable and stylish couches for relaxing, spending time together, and making your home feel cozy.</p>
+      <a class="light-button" href="product.html#couch">Explore Collection</a>
+    </div>
+  </section>
+
+  <section class="section site-container">
+    <p class="eyebrow text-center">A few favorites</p>
+    <h2 class="section-title">Featured Products</h2>
+    <div class="row g-4 featured-grid">
+      <article class="col-12 col-md-6 col-lg-4"><div class="featured-card">
+        <div class="featured-image"><img src="images/chair.png" alt="The Sunday Chair"></div>
+        <h3>The Sunday Chair</h3><p class="product-description">A soft, inviting chair for a quiet moment at home.</p><p class="price">₱25,999.00</p>
+        <div class="product-actions"><button class="outline-button add-button" type="button">Add to Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+      </div></article>
+      <article class="col-12 col-md-6 col-lg-4"><div class="featured-card">
+        <div class="featured-image"><img src="images/nook.png" alt="The Nook Sofa"></div>
+        <h3>The Nook Sofa</h3><p class="product-description">A cozy sofa with room for everyone to settle in.</p><p class="price">₱65,999.00</p>
+        <div class="product-actions"><button class="outline-button add-button" type="button">Add to Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+      </div></article>
+      <article class="col-12 col-md-6 col-lg-4"><div class="featured-card">
+        <div class="featured-image"><img src="images/sectional.png" alt="The Sunday Sectional"></div>
+        <h3>The Sunday Sectional</h3><p class="product-description">A roomy sectional made for movie nights and lazy Sundays.</p><p class="price">₱85,000.00</p>
+        <div class="product-actions"><button class="outline-button add-button" type="button">Add to Cart</button><button class="dark-button order-button" type="button">Order Now</button></div>
+      </div></article>
+    </div>
+    <a class="see-more-button" href="product.html">See More Products</a>
+  </section>
+
+  <section class="home-story">
+    <div class="site-container story-teaser">
+      <div><p class="eyebrow">A home with room to breathe</p><h2>Thoughtful pieces.<br>Everyday comfort.</h2></div>
+      <p>We believe the right furniture can make ordinary days feel a little more special. Get to know the people and story behind The Cozy Nook.</p>
+      <a class="dark-button" href="about.html">Our Story</a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="site-container footer-content">
+    <div>
+      <h2>THE COZY NOOK</h2>
+      <p>Furniture made for slower, cozier days.</p>
+    </div>
+    <div class="footer-socials">
+      <p>Follow our cozy corner</p>
+      <a href="contact.html" aria-label="Instagram, go to Contact Us"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="18" cy="6" r="1"></circle></svg></a>
+      <a href="contact.html" aria-label="Facebook, go to Contact Us"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h2V1.4C17.2 1.2 16.2 1 15 1c-3.2 0-5 1.9-5 5.4V9H7v4h3v8z"></path></svg></a>
+      <a href="contact.html" aria-label="TikTok, go to Contact Us"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3v11.2a4.2 4.2 0 1 1-3-4V7.1c1.1 2 3.2 3.2 6 3.3V7.2c-1.8-.1-3-1.3-3-4.2z"></path></svg></a>
+      <a class="footer-contact-link" href="contact.html">Contact us</a>
+    </div>
+  </div>
+  <p class="copyright">© 2026 The Cozy Nook Furniture</p>
+</footer>
+<div class="cart-modal" id="cart-modal" hidden>
+  <div class="cart-box" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <button class="close-cart" id="close-cart" type="button" aria-label="Close">x</button>
+    <h2 id="cart-title">Your Cart</h2>
+    <p id="cart-message"></p>
+    <div class="cart-actions" id="cart-actions">
+      <button class="dark-button" id="checkout-button" type="button">Check Out</button>
+      <button class="outline-button" id="cancel-order-button" type="button">Cancel Order
+      </button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
